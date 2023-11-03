@@ -26,9 +26,4 @@ class BananaBox<F extends Fruit> extends Box<F>{
         }
     }
 
-//    public void add(F... fruitsToAdd) {
-//        for (F fruit : fruitsToAdd) {
-//            fruits.add(fruit);
-//        }
-//    }
 }
