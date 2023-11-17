@@ -24,10 +24,15 @@ public class Main {
         Box<Orange> orange = new Box<>(Orange.class);
         orange.add(new Orange());
         BananaBox<Banana> bananas = new BananaBox<>(Banana.class);
+        LemonBox<Lemon> lemonBox1 = new LemonBox<>(new Lemon(), new Apple());
+        LemonBox<Lemon> lemonBox2 = new LemonBox<>(new Lemon(), new Orange());
         bananas.add(new Banana());
-        apple2.moveTo(apple2);
-        apple2.printBox();
-
+        lemonBox1.addFruit(3);
+        lemonBox1.addFruit(new Lemon(), new Lemon(), new Banana());
+        bananas.moveTo(apple2);
+        orange.printBox();
+        lemonBox1.moveTo(lemonBox2);
+//        lemonBox1.printBox();
     }
     public static void swapElements(Object[] array, int index1, int index2) {
         System.out.println("Исходный массив: " + Arrays.toString(array));
